@@ -29,7 +29,7 @@ export default function LoginContainer({ history }) {
       .then((res) => {
         const token = res.data;
         localStorage.setItem("meldCX_access_token", token);
-        history.push("/device");
+        history.push("/devices");
       })
       .catch(() => {
         setError(true);
@@ -66,5 +66,5 @@ export default function LoginContainer({ history }) {
     );
   }
 
-  return <Redirect from="/" to="/device" />;
+  return <Redirect from="/" to="/devices" />;
 }

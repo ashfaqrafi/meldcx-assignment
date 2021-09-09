@@ -9,7 +9,7 @@ export default function App() {
     <div className="App">
       <Router>
         <Route path="/" exact component={LoginContainer} />
-        <Route path="/device" component={DeviceContainer} />
+        <Route path="/devices" component={DeviceContainer} />
       </Router>
     </div>
   );

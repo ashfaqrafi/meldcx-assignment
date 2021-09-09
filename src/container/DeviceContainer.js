@@ -87,5 +87,5 @@ export default function DeviceContainer({ history }) {
     );
   }
 
-  return <Redirect from="/device" to="/" />;
+  return <Redirect from="/devices" to="/" />;
 }
