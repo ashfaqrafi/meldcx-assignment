@@ -8,7 +8,7 @@ const url = "http://35.201.2.209:8000";
 const user_info = {
   name: "Ashfaq Mahmood",
   email: "ashfaq.bd92@gmail.com",
-  repoUrl: "https://github.com/ashfaqrafi/meldCX-assignment",
+  repoUrl: "https://github.com/ashfaqrafi/meldcx-assignment",
   message: "Hello meldCX",
 };
 
