@@ -40,26 +40,33 @@ export default function LoginContainer({ history }) {
     return (
       <div className="login-wrapper">
         <h1 className="login-header">Login</h1>
-        <div className="login-inputs">
-          <div style={{ position: "relative" }}>
-            <MdEmail size={20} />
+        <div className="login">
+          <div className="login-inputs">
+            <div style={{ position: "relative" }}>
+              <MdEmail size={20} />
+            </div>
+            <input
+              type="email"
+              onChange={getEmail}
+              placeholder="Email Address"
+              id="email"
+            />
           </div>
-          <input type="email" onChange={getEmail} placeholder="Email Address" />
-        </div>
-        <div className="login-inputs">
-          <div style={{ position: "relative" }}>
-            <MdInfo size={20} />
+          <div className="login-inputs">
+            <div style={{ position: "relative" }}>
+              <MdInfo size={20} />
+            </div>
+            <input
+              type="password"
+              onChange={getPassword}
+              placeholder="Password"
+              id="password"
+            />
           </div>
-          <input
-            type="password"
-            onChange={getPassword}
-            placeholder="Password"
-          />
+          <button onClick={logIn} className="login-button">
+            LOG IN
+          </button>
         </div>
-
-        <button onClick={logIn} className="login-button">
-          LOG IN
-        </button>
 
         {error && errorMessage}
       </div>
